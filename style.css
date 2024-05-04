@@ -1,2 +1,21 @@
-header{background-color: #DA473B;
-color: #FFFFFF;}
+*{
+margin: 0;
+padding: 0;
+}
+
+
+.cabecalho{
+background-color: #161F36;
+color: #DA473B;
+display: flex;
+justify-content: baseline;
+padding: 32px 0;
+font-size: 24px;
+}
+.cabecalho-lista-item{
+display: inline-block;
+margin-top: 0% 16px;
+display: flex;
+justify-content: space-around;
+
+}
