@@ -1,21 +1,97 @@
-*{
-margin: 0;
-padding: 0;
+ 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #DA473B;
+    color: #ffffff;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.agent-todos{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
 }
 
 
-.cabecalho{
-background-color: #161F36;
-color: #DA473B;
-display: flex;
-justify-content: baseline;
-padding: 32px 0;
-font-size: 24px;
+.agent {
+    background-color: #161F36;
+    border: 1px solid #161F36;
+    border-radius: 50px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+   
 }
-.cabecalho-lista-item{
-display: inline-block;
-margin-top: 0% 16px;
-display: flex;
-justify-content: space-around;
+
+.agent img {
+    max-width: 1000px;
+    border-radius: 5%;
+    margin-bottom: 10px;
+    
+    
+    
+}
+
+
+.weapon {
+    background-color: #161F36;
+    border: 1px solid #161F36cc;
+    border-radius:50px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: start;
+    
 
 }
+
+.weapon img {
+    max-width: 100px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.titulo-armas{
+text-align: center;
+}
+
+.titulo-agentes{
+    text-align: center;
+}
+
+.botao {
+    background-color: #3113db; /* cor de fundo */
+    border: none; /* remover a borda */
+    color: white; /* cor do texto */
+    padding: 15px 32px; /* espaço interno */
+    text-align: center; /* alinhamento do texto */
+    text-decoration: none; /* remover decoração do texto */
+    display: inline-block; /* exibir como elemento de bloco */
+    font-size: 16px; /* tamanho da fonte */
+    margin: 4px 2px; /* margem */
+    cursor: pointer; /* cursor do mouse */
+    border-radius: 8px; /* borda arredondada */
+  }
+  
