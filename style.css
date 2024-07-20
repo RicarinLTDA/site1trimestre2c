@@ -1,4 +1,3 @@
- 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -22,49 +21,35 @@ section {
     margin-bottom: 20px;
 }
 
-.agent-todos{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
+.agent-todos, .weapon-todos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
 }
 
-
-.agent {
+.agent, .weapon {
     background-color: #161F36;
     border: 1px solid #161F36;
     border-radius: 50px;
     padding: 20px;
     margin: 20px;
     text-align: center;
-   
+    max-width: 200px;
+    position: relative;
 }
 
-.agent img {
-    max-width: 1000px;
-    border-radius: 5%;
+.agent img, .weapon img {
+    max-width: 100%;
+    border-radius: 10%;
     margin-bottom: 10px;
-    
-    
-    
+    transition: transform 0.3s ease;
 }
 
-
-.weapon {
-    background-color: #161F36;
-    border: 1px solid #161F36cc;
-    border-radius:50px;
-    padding: 20px;
-    margin-bottom: 20px;
-    text-align: start;
-    
-
+.agent:hover img, .weapon:hover img {
+    transform: scale(1.1);
 }
-
-.weapon img {
-    max-width: 100px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
 
 footer {
     background-color: #333;
@@ -73,25 +58,53 @@ footer {
     padding: 10px 0;
 }
 
-.titulo-armas{
-text-align: center;
-}
-
-.titulo-agentes{
+.titulo-armas, .titulo-agentes {
     text-align: center;
 }
 
 .botao {
-    background-color: #3113db; /* cor de fundo */
-    border: none; /* remover a borda */
-    color: white; /* cor do texto */
-    padding: 15px 32px; /* espaço interno */
-    text-align: center; /* alinhamento do texto */
-    text-decoration: none; /* remover decoração do texto */
-    display: inline-block; /* exibir como elemento de bloco */
-    font-size: 16px; /* tamanho da fonte */
-    margin: 4px 2px; /* margem */
-    cursor: pointer; /* cursor do mouse */
-    border-radius: 8px; /* borda arredondada */
-  }
-  
+    background-color: #3113db;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.detalhe-personagem {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.imagem-container {
+    position: relative;
+    display: inline-block;
+}
+
+.imagem-personagem {
+    max-width: 80%;
+    border-radius: 10%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, left 1.5s ease;
+    position: relative;
+}
+
+.imagem-container:hover .imagem-personagem {
+    transform: scale(1.1);
+    left: -50px;
+}
+
+.info-adicional {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 200px;
+    background-color: #333
+}
